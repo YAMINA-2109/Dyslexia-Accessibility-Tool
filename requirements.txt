@@ -1,7 +1,5 @@
 streamlit
-torch
-transformers
 pillow
 pytesseract
-gtts
+pyttsx3
 ollama
