@@ -1,5 +1,7 @@
-streamlit
-pillow
-pytesseract
-pyttsx3
-ollama
+streamlit==1.32.0
+pillow==10.1.0
+pytesseract==0.3.10
+pyttsx3==2.90
+ollama==0.1.0
+comtypes==1.2.0
+gtts==2.4.0
