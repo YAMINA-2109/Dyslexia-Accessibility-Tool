@@ -2,13 +2,9 @@
 
 This tool **simplifies text, highlights difficult words, and provides pronunciation guidance** to help people with dyslexia. 
 
-## 🚀 Features:
-- **Text Simplification** for better readability.
-- **Hard Word Detection** & Underlining.
-- **Pronunciation Guide** with **Text-to-Speech (TTS)**.
-- **OCR Support** to extract and simplify text from images.
-- **Dyslexia-Friendly UI** with custom fonts and colors.
+.
 
+---
 ---
 
 ## 🛠️ Installation & Setup
