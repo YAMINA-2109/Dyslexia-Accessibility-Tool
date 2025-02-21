@@ -2,8 +2,8 @@ import streamlit as st
 from utils import (
     text_to_speech, speech_to_text, grammar_and_spell_check,
     simplify_text, highlight_difficult_words, break_into_syllables,
-    phonetic_pronunciation, pronounce_word, generate_personalized_content,
-    generate_quiz, word_matching_game, provide_encouragement, track_progress
+    phonetic_pronunciation, generate_personalized_content, generate_quiz,
+    provide_encouragement
 )
 
 # Main Page
@@ -14,7 +14,7 @@ st.sidebar.header("🔧 Navigation")
 page = st.sidebar.radio("Go to:", [
     "🏠 Home", "📖 Real-Time Text Assistance", "📚 Improve Readability",
     "🔠 Pronunciation Support", "🎓 Personalized Learning", "🎮 Interactive Tools",
-    "💬 Emotional Support", "📊 Progress Tracking"
+    "💬 Emotional Support"
 ])
 
 # Apply Custom Styles
@@ -84,11 +84,6 @@ elif page == "🔠 Pronunciation Support":
         pronunciation = phonetic_pronunciation(word)
         st.write(f"Phonetic Pronunciation: {pronunciation}")
 
-    word = st.text_input("Enter a word to pronounce:")
-    if st.button("Pronounce Word"):
-        audio_file = pronounce_word(word)
-        st.audio(audio_file, format="audio/mp3")
-
 # Personalized Learning Page
 elif page == "🎓 Personalized Learning":
     st.header("🎓 Personalized Learning")
@@ -106,22 +101,9 @@ elif page == "🎮 Interactive Tools":
         quiz = generate_quiz(text)
         st.write(f"Quiz: {quiz}")
 
-    st.write("### Word Matching Game")
-    if st.button("Start Word Matching Game"):
-        words = word_matching_game()
-        st.write(f"Match the words: {words}")
-
 # Emotional Support Page
 elif page == "💬 Emotional Support":
     st.header("💬 Emotional Support")
     if st.button("Get Encouragement"):
         encouragement = provide_encouragement()
         st.write(f"💖 {encouragement}")
-
-# Progress Tracking Page
-elif page == "📊 Progress Tracking":
-    st.header("📊 Progress Tracking")
-    user_id = st.text_input("Enter your user ID:")
-    if st.button("Track Progress"):
-        progress = track_progress(user_id)
-        st.write(progress)
