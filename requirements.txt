@@ -5,3 +5,9 @@ pyttsx3==2.90
 ollama==0.1.0
 comtypes==1.2.0
 gtts==2.4.0
+# Phonetic/audio requirements
+g2p_en>=2.1.0
+python-levenshtein>=0.25.0  # Required for g2p-en alignment
+# Optional (if needed)
+numpy>=1.26.0  # Dependency for g2p-en
+nltk>=3.8.1
