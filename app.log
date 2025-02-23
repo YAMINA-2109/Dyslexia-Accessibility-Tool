@@ -244,3 +244,703 @@
 2025-02-23 02:28:28,720 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpz98fcuds.mp3
 2025-02-23 02:43:09,868 - DEBUG - Calling CoUninitialize()
 2025-02-23 02:43:09,887 - DEBUG - CoUninitialize() done.
+2025-02-23 02:57:35,847 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 02:57:35,851 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD4C8E3F0>
+2025-02-23 02:57:35,852 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 02:57:35,854 - DEBUG - send_request_headers.complete
+2025-02-23 02:57:35,854 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 02:57:35,855 - DEBUG - send_request_body.complete
+2025-02-23 02:57:35,856 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 02:58:23,933 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 21:58:23 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 02:58:23,937 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 02:58:23,937 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 02:58:23,939 - DEBUG - receive_response_body.complete
+2025-02-23 02:58:23,942 - DEBUG - response_closed.started
+2025-02-23 02:58:23,942 - DEBUG - response_closed.complete
+2025-02-23 02:58:23,956 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 02:58:23,957 - DEBUG - send_request_headers.complete
+2025-02-23 02:58:23,957 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 02:58:23,957 - DEBUG - send_request_body.complete
+2025-02-23 02:58:23,958 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 02:58:29,813 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 21:58:29 GMT'), (b'Content-Length', b'862')])
+2025-02-23 02:58:29,813 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 02:58:29,813 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 02:58:29,815 - DEBUG - receive_response_body.complete
+2025-02-23 02:58:29,815 - DEBUG - response_closed.started
+2025-02-23 02:58:29,815 - DEBUG - response_closed.complete
+2025-02-23 02:58:31,638 - DEBUG - text: entanglement
+2025-02-23 02:58:31,639 - DEBUG - tld: com
+2025-02-23 02:58:31,639 - DEBUG - lang: en
+2025-02-23 02:58:31,641 - DEBUG - slow: True
+2025-02-23 02:58:31,641 - DEBUG - lang_check: True
+2025-02-23 02:58:31,641 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 02:58:31,641 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 02:58:31,647 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 02:58:31,649 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 02:58:31,650 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 02:58:31,651 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 02:58:31,652 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 02:58:31,652 - DEBUG - text_parts: ['entanglement']
+2025-02-23 02:58:31,653 - DEBUG - text_parts: 1
+2025-02-23 02:58:31,655 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22entanglement%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 02:58:31,659 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 02:58:32,875 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 02:58:33,185 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2025-02-23 02:58:33,186 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 02:58:33,186 - DEBUG - status-0: 200
+2025-02-23 02:58:33,251 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpofbdaz77.mp3'>
+2025-02-23 02:58:33,252 - DEBUG - part-0 created
+2025-02-23 02:58:33,253 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpofbdaz77.mp3
+2025-02-23 02:58:33,264 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 02:58:33,265 - DEBUG - send_request_headers.complete
+2025-02-23 02:58:33,265 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 02:58:33,265 - DEBUG - send_request_body.complete
+2025-02-23 02:58:33,266 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 02:58:39,191 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 21:58:39 GMT'), (b'Content-Length', b'836')])
+2025-02-23 02:58:39,191 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 02:58:39,192 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 02:58:39,192 - DEBUG - receive_response_body.complete
+2025-02-23 02:58:39,192 - DEBUG - response_closed.started
+2025-02-23 02:58:39,192 - DEBUG - response_closed.complete
+2025-02-23 02:58:40,605 - DEBUG - text: biochemical
+2025-02-23 02:58:40,607 - DEBUG - tld: com
+2025-02-23 02:58:40,607 - DEBUG - lang: en
+2025-02-23 02:58:40,608 - DEBUG - slow: True
+2025-02-23 02:58:40,608 - DEBUG - lang_check: True
+2025-02-23 02:58:40,608 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 02:58:40,608 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 02:58:40,608 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 02:58:40,609 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 02:58:40,609 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 02:58:40,609 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 02:58:40,610 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 02:58:40,610 - DEBUG - text_parts: ['biochemical']
+2025-02-23 02:58:40,610 - DEBUG - text_parts: 1
+2025-02-23 02:58:40,610 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22biochemical%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 02:58:40,611 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 02:58:41,424 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 02:58:41,425 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '141'}
+2025-02-23 02:58:41,425 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 02:58:41,425 - DEBUG - status-0: 200
+2025-02-23 02:58:41,428 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpl_pjbsm1.mp3'>
+2025-02-23 02:58:41,428 - DEBUG - part-0 created
+2025-02-23 02:58:41,430 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpl_pjbsm1.mp3
+2025-02-23 02:58:41,440 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 02:58:41,440 - DEBUG - send_request_headers.complete
+2025-02-23 02:58:41,440 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 02:58:41,441 - DEBUG - send_request_body.complete
+2025-02-23 02:58:41,441 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 02:58:47,074 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 21:58:47 GMT'), (b'Content-Length', b'820')])
+2025-02-23 02:58:47,074 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 02:58:47,074 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 02:58:47,074 - DEBUG - receive_response_body.complete
+2025-02-23 02:58:47,074 - DEBUG - response_closed.started
+2025-02-23 02:58:47,074 - DEBUG - response_closed.complete
+2025-02-23 02:58:48,755 - DEBUG - text: photosynthesis
+2025-02-23 02:58:48,755 - DEBUG - tld: com
+2025-02-23 02:58:48,755 - DEBUG - lang: en
+2025-02-23 02:58:48,756 - DEBUG - slow: True
+2025-02-23 02:58:48,756 - DEBUG - lang_check: True
+2025-02-23 02:58:48,756 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 02:58:48,756 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 02:58:48,756 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 02:58:48,757 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 02:58:48,757 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 02:58:48,757 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 02:58:48,757 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 02:58:48,758 - DEBUG - text_parts: ['photosynthesis']
+2025-02-23 02:58:48,758 - DEBUG - text_parts: 1
+2025-02-23 02:58:48,758 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22photosynthesis%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 02:58:48,759 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 02:58:49,493 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 02:58:49,592 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '144'}
+2025-02-23 02:58:49,592 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 02:58:49,592 - DEBUG - status-0: 200
+2025-02-23 02:58:49,595 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpbhfgm8sm.mp3'>
+2025-02-23 02:58:49,595 - DEBUG - part-0 created
+2025-02-23 02:58:49,597 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpbhfgm8sm.mp3
+2025-02-23 03:02:02,376 - DEBUG - close.started
+2025-02-23 03:02:02,381 - DEBUG - close.complete
+2025-02-23 03:02:02,382 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 03:02:02,384 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD9070380>
+2025-02-23 03:02:02,387 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:02:02,390 - DEBUG - send_request_headers.complete
+2025-02-23 03:02:02,390 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:02:02,390 - DEBUG - send_request_body.complete
+2025-02-23 03:02:02,390 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:02:22,245 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:02:22 GMT'), (b'Content-Length', b'1263')])
+2025-02-23 03:02:22,260 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:02:22,263 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:02:22,265 - DEBUG - receive_response_body.complete
+2025-02-23 03:02:22,267 - DEBUG - response_closed.started
+2025-02-23 03:02:22,268 - DEBUG - response_closed.complete
+2025-02-23 03:06:24,109 - DEBUG - close.started
+2025-02-23 03:06:24,113 - DEBUG - close.complete
+2025-02-23 03:06:24,114 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 03:06:24,121 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD9072510>
+2025-02-23 03:06:24,121 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:06:24,122 - DEBUG - send_request_headers.complete
+2025-02-23 03:06:24,122 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:06:24,123 - DEBUG - send_request_body.complete
+2025-02-23 03:06:24,123 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:07:02,193 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:07:02 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 03:07:02,198 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:07:02,199 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:07:02,200 - DEBUG - receive_response_body.complete
+2025-02-23 03:07:02,202 - DEBUG - response_closed.started
+2025-02-23 03:07:02,202 - DEBUG - response_closed.complete
+2025-02-23 03:07:02,221 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:07:02,222 - DEBUG - send_request_headers.complete
+2025-02-23 03:07:02,222 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:07:02,222 - DEBUG - send_request_body.complete
+2025-02-23 03:07:02,222 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:07:08,565 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:07:08 GMT'), (b'Content-Length', b'884')])
+2025-02-23 03:07:08,566 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:07:08,566 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:07:08,567 - DEBUG - receive_response_body.complete
+2025-02-23 03:07:08,568 - DEBUG - response_closed.started
+2025-02-23 03:07:08,568 - DEBUG - response_closed.complete
+2025-02-23 03:07:11,278 - DEBUG - text: entanglement
+2025-02-23 03:07:11,280 - DEBUG - tld: com
+2025-02-23 03:07:11,281 - DEBUG - lang: en
+2025-02-23 03:07:11,281 - DEBUG - slow: True
+2025-02-23 03:07:11,281 - DEBUG - lang_check: True
+2025-02-23 03:07:11,281 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:07:11,281 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:07:11,288 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:07:11,289 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:07:11,290 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:07:11,290 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:07:11,290 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:07:11,291 - DEBUG - text_parts: ['entanglement']
+2025-02-23 03:07:11,291 - DEBUG - text_parts: 1
+2025-02-23 03:07:11,292 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22entanglement%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:07:11,294 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:07:12,392 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:07:12,394 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2025-02-23 03:07:12,394 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:07:12,395 - DEBUG - status-0: 200
+2025-02-23 03:07:12,398 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpvy_am041.mp3'>
+2025-02-23 03:07:12,398 - DEBUG - part-0 created
+2025-02-23 03:07:12,400 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpvy_am041.mp3
+2025-02-23 03:07:12,406 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:07:12,406 - DEBUG - send_request_headers.complete
+2025-02-23 03:07:12,406 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:07:12,407 - DEBUG - send_request_body.complete
+2025-02-23 03:07:12,408 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:07:18,222 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:07:18 GMT'), (b'Content-Length', b'865')])
+2025-02-23 03:07:18,222 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:07:18,222 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:07:18,222 - DEBUG - receive_response_body.complete
+2025-02-23 03:07:18,222 - DEBUG - response_closed.started
+2025-02-23 03:07:18,223 - DEBUG - response_closed.complete
+2025-02-23 03:07:19,780 - DEBUG - text: biochemical
+2025-02-23 03:07:19,780 - DEBUG - tld: com
+2025-02-23 03:07:19,780 - DEBUG - lang: en
+2025-02-23 03:07:19,780 - DEBUG - slow: True
+2025-02-23 03:07:19,780 - DEBUG - lang_check: True
+2025-02-23 03:07:19,780 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:07:19,781 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:07:19,781 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:07:19,782 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:07:19,782 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:07:19,782 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:07:19,782 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:07:19,782 - DEBUG - text_parts: ['biochemical']
+2025-02-23 03:07:19,783 - DEBUG - text_parts: 1
+2025-02-23 03:07:19,783 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22biochemical%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:07:19,784 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:07:20,355 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:07:20,396 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '141'}
+2025-02-23 03:07:20,396 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:07:20,396 - DEBUG - status-0: 200
+2025-02-23 03:07:20,398 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpx3dmauh8.mp3'>
+2025-02-23 03:07:20,398 - DEBUG - part-0 created
+2025-02-23 03:07:20,401 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpx3dmauh8.mp3
+2025-02-23 03:14:59,229 - DEBUG - close.started
+2025-02-23 03:14:59,230 - DEBUG - close.complete
+2025-02-23 03:14:59,231 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 03:14:59,232 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD90849E0>
+2025-02-23 03:14:59,233 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:14:59,233 - DEBUG - send_request_headers.complete
+2025-02-23 03:14:59,233 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:14:59,235 - DEBUG - send_request_body.complete
+2025-02-23 03:14:59,235 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:15:40,080 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:15:40 GMT'), (b'Content-Length', b'1862')])
+2025-02-23 03:15:40,088 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:15:40,089 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:15:40,090 - DEBUG - receive_response_body.complete
+2025-02-23 03:15:40,092 - DEBUG - response_closed.started
+2025-02-23 03:15:40,092 - DEBUG - response_closed.complete
+2025-02-23 03:15:40,116 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:15:40,120 - DEBUG - send_request_headers.complete
+2025-02-23 03:15:40,120 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:15:40,121 - DEBUG - send_request_body.complete
+2025-02-23 03:15:40,121 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:15:45,566 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:15:45 GMT'), (b'Content-Length', b'795')])
+2025-02-23 03:15:45,567 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:15:45,567 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:15:45,567 - DEBUG - receive_response_body.complete
+2025-02-23 03:15:45,567 - DEBUG - response_closed.started
+2025-02-23 03:15:45,567 - DEBUG - response_closed.complete
+2025-02-23 03:15:48,057 - DEBUG - text: entanglement
+2025-02-23 03:15:48,058 - DEBUG - tld: com
+2025-02-23 03:15:48,058 - DEBUG - lang: en
+2025-02-23 03:15:48,058 - DEBUG - slow: True
+2025-02-23 03:15:48,058 - DEBUG - lang_check: True
+2025-02-23 03:15:48,058 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:15:48,058 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:15:48,063 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:15:48,067 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:15:48,067 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:15:48,067 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:15:48,068 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:15:48,068 - DEBUG - text_parts: ['entanglement']
+2025-02-23 03:15:48,068 - DEBUG - text_parts: 1
+2025-02-23 03:15:48,068 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22entanglement%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:15:48,072 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:15:48,891 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:15:48,935 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2025-02-23 03:15:48,936 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:15:48,936 - DEBUG - status-0: 200
+2025-02-23 03:15:48,939 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmp9zefc57e.mp3'>
+2025-02-23 03:15:48,940 - DEBUG - part-0 created
+2025-02-23 03:15:48,943 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmp9zefc57e.mp3
+2025-02-23 03:15:48,951 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:15:48,952 - DEBUG - send_request_headers.complete
+2025-02-23 03:15:48,953 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:15:48,956 - DEBUG - send_request_body.complete
+2025-02-23 03:15:48,957 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:15:54,008 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:15:54 GMT'), (b'Content-Length', b'784')])
+2025-02-23 03:15:54,009 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:15:54,009 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:15:54,009 - DEBUG - receive_response_body.complete
+2025-02-23 03:15:54,010 - DEBUG - response_closed.started
+2025-02-23 03:15:54,010 - DEBUG - response_closed.complete
+2025-02-23 03:15:55,419 - DEBUG - text: biochemical
+2025-02-23 03:15:55,419 - DEBUG - tld: com
+2025-02-23 03:15:55,419 - DEBUG - lang: en
+2025-02-23 03:15:55,419 - DEBUG - slow: True
+2025-02-23 03:15:55,419 - DEBUG - lang_check: True
+2025-02-23 03:15:55,420 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:15:55,420 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:15:55,420 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:15:55,421 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:15:55,421 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:15:55,422 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:15:55,422 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:15:55,422 - DEBUG - text_parts: ['biochemical']
+2025-02-23 03:15:55,422 - DEBUG - text_parts: 1
+2025-02-23 03:15:55,422 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22biochemical%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:15:55,423 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:15:56,195 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:15:56,237 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '141'}
+2025-02-23 03:15:56,237 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:15:56,237 - DEBUG - status-0: 200
+2025-02-23 03:15:56,240 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpw4el5i_o.mp3'>
+2025-02-23 03:15:56,241 - DEBUG - part-0 created
+2025-02-23 03:15:56,242 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpw4el5i_o.mp3
+2025-02-23 03:15:56,253 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:15:56,253 - DEBUG - send_request_headers.complete
+2025-02-23 03:15:56,254 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:15:56,254 - DEBUG - send_request_body.complete
+2025-02-23 03:15:56,255 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:16:01,865 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:16:01 GMT'), (b'Content-Length', b'826')])
+2025-02-23 03:16:01,866 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:16:01,866 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:16:01,866 - DEBUG - receive_response_body.complete
+2025-02-23 03:16:01,866 - DEBUG - response_closed.started
+2025-02-23 03:16:01,866 - DEBUG - response_closed.complete
+2025-02-23 03:16:03,583 - DEBUG - text: photosynthesis
+2025-02-23 03:16:03,583 - DEBUG - tld: com
+2025-02-23 03:16:03,583 - DEBUG - lang: en
+2025-02-23 03:16:03,583 - DEBUG - slow: True
+2025-02-23 03:16:03,584 - DEBUG - lang_check: True
+2025-02-23 03:16:03,584 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:16:03,584 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:16:03,584 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:16:03,585 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:16:03,585 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:16:03,586 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:16:03,586 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:16:03,586 - DEBUG - text_parts: ['photosynthesis']
+2025-02-23 03:16:03,586 - DEBUG - text_parts: 1
+2025-02-23 03:16:03,586 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22photosynthesis%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:16:03,588 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:16:04,316 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:16:04,364 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '144'}
+2025-02-23 03:16:04,366 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:16:04,366 - DEBUG - status-0: 200
+2025-02-23 03:16:04,368 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpzlhdwcu9.mp3'>
+2025-02-23 03:16:04,369 - DEBUG - part-0 created
+2025-02-23 03:16:04,370 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpzlhdwcu9.mp3
+2025-02-23 03:16:04,381 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:16:04,383 - DEBUG - send_request_headers.complete
+2025-02-23 03:16:04,384 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:16:04,385 - DEBUG - send_request_body.complete
+2025-02-23 03:16:04,385 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:16:09,820 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:16:09 GMT'), (b'Content-Length', b'785')])
+2025-02-23 03:16:09,821 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:16:09,821 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:16:09,821 - DEBUG - receive_response_body.complete
+2025-02-23 03:16:09,822 - DEBUG - response_closed.started
+2025-02-23 03:16:09,822 - DEBUG - response_closed.complete
+2025-02-23 03:16:11,553 - DEBUG - text: fascinating
+2025-02-23 03:16:11,553 - DEBUG - tld: com
+2025-02-23 03:16:11,554 - DEBUG - lang: en
+2025-02-23 03:16:11,554 - DEBUG - slow: True
+2025-02-23 03:16:11,554 - DEBUG - lang_check: True
+2025-02-23 03:16:11,554 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:16:11,554 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:16:11,554 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:16:11,555 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:16:11,555 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:16:11,555 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:16:11,555 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:16:11,556 - DEBUG - text_parts: ['fascinating']
+2025-02-23 03:16:11,556 - DEBUG - text_parts: 1
+2025-02-23 03:16:11,556 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22fascinating%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:16:11,557 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:16:12,293 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:16:12,325 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '141'}
+2025-02-23 03:16:12,325 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:16:12,326 - DEBUG - status-0: 200
+2025-02-23 03:16:12,327 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmphrwkcc2i.mp3'>
+2025-02-23 03:16:12,327 - DEBUG - part-0 created
+2025-02-23 03:16:12,328 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmphrwkcc2i.mp3
+2025-02-23 03:16:12,334 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:16:12,335 - DEBUG - send_request_headers.complete
+2025-02-23 03:16:12,335 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:16:12,336 - DEBUG - send_request_body.complete
+2025-02-23 03:16:12,338 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:16:18,616 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:16:18 GMT'), (b'Content-Length', b'843')])
+2025-02-23 03:16:18,616 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:16:18,617 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:16:18,617 - DEBUG - receive_response_body.complete
+2025-02-23 03:16:18,617 - DEBUG - response_closed.started
+2025-02-23 03:16:18,617 - DEBUG - response_closed.complete
+2025-02-23 03:16:19,892 - DEBUG - text: phenomena.
+2025-02-23 03:16:19,893 - DEBUG - tld: com
+2025-02-23 03:16:19,893 - DEBUG - lang: en
+2025-02-23 03:16:19,893 - DEBUG - slow: True
+2025-02-23 03:16:19,893 - DEBUG - lang_check: True
+2025-02-23 03:16:19,893 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:16:19,893 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:16:19,894 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:16:19,895 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:16:19,895 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:16:19,895 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:16:19,895 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:16:19,895 - DEBUG - text_parts: ['phenomena.']
+2025-02-23 03:16:19,896 - DEBUG - text_parts: 1
+2025-02-23 03:16:19,896 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22phenomena.%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:16:19,897 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:16:20,540 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:16:20,554 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '140'}
+2025-02-23 03:16:20,554 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:16:20,554 - DEBUG - status-0: 200
+2025-02-23 03:16:20,555 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpqyrwvqz4.mp3'>
+2025-02-23 03:16:20,555 - DEBUG - part-0 created
+2025-02-23 03:16:20,557 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpqyrwvqz4.mp3
+2025-02-23 03:18:55,382 - DEBUG - close.started
+2025-02-23 03:18:55,399 - DEBUG - close.complete
+2025-02-23 03:18:55,399 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 03:18:55,410 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD5A9FD40>
+2025-02-23 03:18:55,416 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:18:55,430 - DEBUG - send_request_headers.complete
+2025-02-23 03:18:55,431 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:18:55,431 - DEBUG - send_request_body.complete
+2025-02-23 03:18:55,431 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:19:37,584 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:19:37 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 03:19:37,610 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:19:37,617 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:19:37,621 - DEBUG - receive_response_body.complete
+2025-02-23 03:19:37,622 - DEBUG - response_closed.started
+2025-02-23 03:19:37,623 - DEBUG - response_closed.complete
+2025-02-23 03:19:37,638 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:19:37,639 - DEBUG - send_request_headers.complete
+2025-02-23 03:19:37,639 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:19:37,640 - DEBUG - send_request_body.complete
+2025-02-23 03:19:37,641 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:19:45,047 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:19:44 GMT'), (b'Content-Length', b'927')])
+2025-02-23 03:19:45,047 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:19:45,049 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:19:45,049 - DEBUG - receive_response_body.complete
+2025-02-23 03:19:45,050 - DEBUG - response_closed.started
+2025-02-23 03:19:45,050 - DEBUG - response_closed.complete
+2025-02-23 03:19:47,959 - DEBUG - text: entanglement
+2025-02-23 03:19:47,959 - DEBUG - tld: com
+2025-02-23 03:19:47,959 - DEBUG - lang: en
+2025-02-23 03:19:47,959 - DEBUG - slow: True
+2025-02-23 03:19:47,959 - DEBUG - lang_check: True
+2025-02-23 03:19:47,960 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:19:47,960 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:19:47,965 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:19:47,966 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:19:47,966 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:19:47,967 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:19:47,967 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:19:47,967 - DEBUG - text_parts: ['entanglement']
+2025-02-23 03:19:47,967 - DEBUG - text_parts: 1
+2025-02-23 03:19:47,967 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22entanglement%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:19:47,970 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:19:48,836 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:19:48,878 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '142'}
+2025-02-23 03:19:48,878 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:19:48,878 - DEBUG - status-0: 200
+2025-02-23 03:19:48,881 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpkda3orkm.mp3'>
+2025-02-23 03:19:48,881 - DEBUG - part-0 created
+2025-02-23 03:19:48,882 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpkda3orkm.mp3
+2025-02-23 03:19:48,891 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:19:48,893 - DEBUG - send_request_headers.complete
+2025-02-23 03:19:48,893 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:19:48,893 - DEBUG - send_request_body.complete
+2025-02-23 03:19:48,893 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:19:56,175 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:19:56 GMT'), (b'Content-Length', b'892')])
+2025-02-23 03:19:56,176 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:19:56,176 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:19:56,176 - DEBUG - receive_response_body.complete
+2025-02-23 03:19:56,176 - DEBUG - response_closed.started
+2025-02-23 03:19:56,176 - DEBUG - response_closed.complete
+2025-02-23 03:19:57,812 - DEBUG - text: photosynthesis
+2025-02-23 03:19:57,812 - DEBUG - tld: com
+2025-02-23 03:19:57,812 - DEBUG - lang: en
+2025-02-23 03:19:57,812 - DEBUG - slow: True
+2025-02-23 03:19:57,812 - DEBUG - lang_check: True
+2025-02-23 03:19:57,812 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:19:57,812 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:19:57,812 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:19:57,814 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:19:57,814 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:19:57,815 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:19:57,815 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:19:57,815 - DEBUG - text_parts: ['photosynthesis']
+2025-02-23 03:19:57,815 - DEBUG - text_parts: 1
+2025-02-23 03:19:57,815 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22photosynthesis%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:19:57,817 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:19:59,038 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:19:59,221 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '144'}
+2025-02-23 03:19:59,222 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:19:59,222 - DEBUG - status-0: 200
+2025-02-23 03:19:59,301 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpei4zepl6.mp3'>
+2025-02-23 03:19:59,301 - DEBUG - part-0 created
+2025-02-23 03:19:59,302 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpei4zepl6.mp3
+2025-02-23 03:19:59,308 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:19:59,309 - DEBUG - send_request_headers.complete
+2025-02-23 03:19:59,310 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:19:59,310 - DEBUG - send_request_body.complete
+2025-02-23 03:19:59,311 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:20:06,217 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:20:06 GMT'), (b'Content-Length', b'880')])
+2025-02-23 03:20:06,218 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:20:06,218 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:20:06,218 - DEBUG - receive_response_body.complete
+2025-02-23 03:20:06,219 - DEBUG - response_closed.started
+2025-02-23 03:20:06,219 - DEBUG - response_closed.complete
+2025-02-23 03:20:07,917 - DEBUG - text: biochemical
+2025-02-23 03:20:07,917 - DEBUG - tld: com
+2025-02-23 03:20:07,917 - DEBUG - lang: en
+2025-02-23 03:20:07,918 - DEBUG - slow: True
+2025-02-23 03:20:07,918 - DEBUG - lang_check: True
+2025-02-23 03:20:07,918 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:20:07,918 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:20:07,918 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:20:07,919 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:20:07,920 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:20:07,920 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:20:07,921 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:20:07,921 - DEBUG - text_parts: ['biochemical']
+2025-02-23 03:20:07,921 - DEBUG - text_parts: 1
+2025-02-23 03:20:07,921 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22biochemical%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:20:07,924 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:20:08,635 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:20:08,677 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '141'}
+2025-02-23 03:20:08,678 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:20:08,678 - DEBUG - status-0: 200
+2025-02-23 03:20:08,679 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpyvi3ca0d.mp3'>
+2025-02-23 03:20:08,679 - DEBUG - part-0 created
+2025-02-23 03:20:08,681 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpyvi3ca0d.mp3
+2025-02-23 03:20:08,686 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:20:08,689 - DEBUG - send_request_headers.complete
+2025-02-23 03:20:08,689 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:20:08,691 - DEBUG - send_request_body.complete
+2025-02-23 03:20:08,691 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:20:15,281 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:20:15 GMT'), (b'Content-Length', b'848')])
+2025-02-23 03:20:15,281 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:20:15,281 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:20:15,282 - DEBUG - receive_response_body.complete
+2025-02-23 03:20:15,282 - DEBUG - response_closed.started
+2025-02-23 03:20:15,282 - DEBUG - response_closed.complete
+2025-02-23 03:20:16,953 - DEBUG - text: fascinating
+2025-02-23 03:20:16,953 - DEBUG - tld: com
+2025-02-23 03:20:16,954 - DEBUG - lang: en
+2025-02-23 03:20:16,954 - DEBUG - slow: True
+2025-02-23 03:20:16,954 - DEBUG - lang_check: True
+2025-02-23 03:20:16,954 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:20:16,954 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:20:16,955 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:20:16,956 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:20:16,956 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:20:16,956 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:20:16,956 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:20:16,956 - DEBUG - text_parts: ['fascinating']
+2025-02-23 03:20:16,956 - DEBUG - text_parts: 1
+2025-02-23 03:20:16,957 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22fascinating%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:20:16,958 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:20:17,827 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:20:17,865 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '141'}
+2025-02-23 03:20:17,866 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:20:17,867 - DEBUG - status-0: 200
+2025-02-23 03:20:17,868 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmprp9jbu1b.mp3'>
+2025-02-23 03:20:17,868 - DEBUG - part-0 created
+2025-02-23 03:20:17,870 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmprp9jbu1b.mp3
+2025-02-23 03:20:17,877 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:20:17,878 - DEBUG - send_request_headers.complete
+2025-02-23 03:20:17,879 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:20:17,879 - DEBUG - send_request_body.complete
+2025-02-23 03:20:17,879 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:20:23,055 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:20:23 GMT'), (b'Content-Length', b'789')])
+2025-02-23 03:20:23,056 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:20:23,056 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:20:23,056 - DEBUG - receive_response_body.complete
+2025-02-23 03:20:23,056 - DEBUG - response_closed.started
+2025-02-23 03:20:23,056 - DEBUG - response_closed.complete
+2025-02-23 03:20:24,499 - DEBUG - text: phenomena.
+2025-02-23 03:20:24,499 - DEBUG - tld: com
+2025-02-23 03:20:24,499 - DEBUG - lang: en
+2025-02-23 03:20:24,499 - DEBUG - slow: True
+2025-02-23 03:20:24,499 - DEBUG - lang_check: True
+2025-02-23 03:20:24,500 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:20:24,500 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:20:24,500 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:20:24,501 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:20:24,501 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:20:24,502 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:20:24,502 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:20:24,502 - DEBUG - text_parts: ['phenomena.']
+2025-02-23 03:20:24,502 - DEBUG - text_parts: 1
+2025-02-23 03:20:24,502 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22phenomena.%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:20:24,503 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:20:25,052 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:20:25,071 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '140'}
+2025-02-23 03:20:25,072 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:20:25,072 - DEBUG - status-0: 200
+2025-02-23 03:20:25,072 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpedofas7l.mp3'>
+2025-02-23 03:20:25,072 - DEBUG - part-0 created
+2025-02-23 03:20:25,074 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpedofas7l.mp3
+2025-02-23 03:28:59,143 - DEBUG - close.started
+2025-02-23 03:28:59,144 - DEBUG - close.complete
+2025-02-23 03:28:59,144 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 03:28:59,146 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD566A420>
+2025-02-23 03:28:59,146 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:28:59,147 - DEBUG - send_request_headers.complete
+2025-02-23 03:28:59,147 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:28:59,147 - DEBUG - send_request_body.complete
+2025-02-23 03:28:59,147 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:29:32,389 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:29:32 GMT'), (b'Content-Length', b'1913')])
+2025-02-23 03:29:32,390 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:29:32,390 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:29:32,391 - DEBUG - receive_response_body.complete
+2025-02-23 03:29:32,393 - DEBUG - response_closed.started
+2025-02-23 03:29:32,393 - DEBUG - response_closed.complete
+2025-02-23 03:29:32,409 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:29:32,411 - DEBUG - send_request_headers.complete
+2025-02-23 03:29:32,411 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:29:32,412 - DEBUG - send_request_body.complete
+2025-02-23 03:29:32,412 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:29:36,807 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:29:36 GMT'), (b'Content-Length', b'803')])
+2025-02-23 03:29:36,807 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:29:36,807 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:29:36,807 - DEBUG - receive_response_body.complete
+2025-02-23 03:29:36,808 - DEBUG - response_closed.started
+2025-02-23 03:29:36,808 - DEBUG - response_closed.complete
+2025-02-23 03:29:38,569 - DEBUG - text: disease
+2025-02-23 03:29:38,570 - DEBUG - tld: com
+2025-02-23 03:29:38,570 - DEBUG - lang: en
+2025-02-23 03:29:38,570 - DEBUG - slow: True
+2025-02-23 03:29:38,570 - DEBUG - lang_check: True
+2025-02-23 03:29:38,570 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:29:38,570 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:29:38,574 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:29:38,575 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:29:38,575 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:29:38,576 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:29:38,576 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:29:38,576 - DEBUG - text_parts: ['disease']
+2025-02-23 03:29:38,576 - DEBUG - text_parts: 1
+2025-02-23 03:29:38,576 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22disease%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:29:38,578 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:29:39,698 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:29:39,711 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '137'}
+2025-02-23 03:29:39,711 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:29:39,711 - DEBUG - status-0: 200
+2025-02-23 03:29:39,714 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmp5hk6qdgn.mp3'>
+2025-02-23 03:29:39,714 - DEBUG - part-0 created
+2025-02-23 03:29:39,716 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmp5hk6qdgn.mp3
+2025-02-23 03:29:39,725 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:29:39,726 - DEBUG - send_request_headers.complete
+2025-02-23 03:29:39,726 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:29:39,727 - DEBUG - send_request_body.complete
+2025-02-23 03:29:39,728 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:29:43,442 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:29:43 GMT'), (b'Content-Length', b'735')])
+2025-02-23 03:29:43,442 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:29:43,442 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:29:43,442 - DEBUG - receive_response_body.complete
+2025-02-23 03:29:43,442 - DEBUG - response_closed.started
+2025-02-23 03:29:43,442 - DEBUG - response_closed.complete
+2025-02-23 03:29:44,695 - DEBUG - text: inhaling
+2025-02-23 03:29:44,695 - DEBUG - tld: com
+2025-02-23 03:29:44,695 - DEBUG - lang: en
+2025-02-23 03:29:44,695 - DEBUG - slow: True
+2025-02-23 03:29:44,695 - DEBUG - lang_check: True
+2025-02-23 03:29:44,695 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:29:44,695 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:29:44,696 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:29:44,696 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:29:44,697 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:29:44,697 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:29:44,697 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:29:44,697 - DEBUG - text_parts: ['inhaling']
+2025-02-23 03:29:44,697 - DEBUG - text_parts: 1
+2025-02-23 03:29:44,697 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22inhaling%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:29:44,699 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:29:45,517 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:29:45,553 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '138'}
+2025-02-23 03:29:45,553 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:29:45,553 - DEBUG - status-0: 200
+2025-02-23 03:29:45,554 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmp4up9xi1i.mp3'>
+2025-02-23 03:29:45,555 - DEBUG - part-0 created
+2025-02-23 03:29:45,556 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmp4up9xi1i.mp3
+2025-02-23 03:29:45,562 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:29:45,563 - DEBUG - send_request_headers.complete
+2025-02-23 03:29:45,563 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:29:45,564 - DEBUG - send_request_body.complete
+2025-02-23 03:29:45,564 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:29:49,900 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:29:49 GMT'), (b'Content-Length', b'796')])
+2025-02-23 03:29:49,900 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:29:49,900 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:29:49,900 - DEBUG - receive_response_body.complete
+2025-02-23 03:29:49,901 - DEBUG - response_closed.started
+2025-02-23 03:29:49,901 - DEBUG - response_closed.complete
+2025-02-23 03:29:51,015 - DEBUG - text: volcanic
+2025-02-23 03:29:51,016 - DEBUG - tld: com
+2025-02-23 03:29:51,016 - DEBUG - lang: en
+2025-02-23 03:29:51,016 - DEBUG - slow: True
+2025-02-23 03:29:51,016 - DEBUG - lang_check: True
+2025-02-23 03:29:51,016 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x000001ADD51132E0>, <function end_of_line at 0x000001ADD5113380>, <function abbreviations at 0x000001ADD5113420>, <function word_sub at 0x000001ADD5113CE0>]
+2025-02-23 03:29:51,016 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|\u060c|;|¡|\u3001|\\]|—|¿|\\(|\uff0c|\u3002|\\\n|\\[|\\)|\u2025|\uff1a', re.IGNORECASE) from: [<function tone_marks at 0x000001ADD5113D80>, <function period_comma at 0x000001ADD5113E20>, <function colon at 0x000001ADD5113EC0>, <function other_punctuation at 0x000001ADD5113F60>]>
+2025-02-23 03:29:51,016 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 03:29:51,017 - DEBUG - pre-processing: <function tone_marks at 0x000001ADD51132E0>
+2025-02-23 03:29:51,018 - DEBUG - pre-processing: <function end_of_line at 0x000001ADD5113380>
+2025-02-23 03:29:51,018 - DEBUG - pre-processing: <function abbreviations at 0x000001ADD5113420>
+2025-02-23 03:29:51,018 - DEBUG - pre-processing: <function word_sub at 0x000001ADD5113CE0>
+2025-02-23 03:29:51,018 - DEBUG - text_parts: ['volcanic']
+2025-02-23 03:29:51,018 - DEBUG - text_parts: 1
+2025-02-23 03:29:51,018 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22volcanic%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 03:29:51,020 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 03:29:51,637 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 03:29:51,650 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '138'}
+2025-02-23 03:29:51,651 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 03:29:51,651 - DEBUG - status-0: 200
+2025-02-23 03:29:51,652 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmp5qgx06ra.mp3'>
+2025-02-23 03:29:51,652 - DEBUG - part-0 created
+2025-02-23 03:29:51,654 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmp5qgx06ra.mp3
