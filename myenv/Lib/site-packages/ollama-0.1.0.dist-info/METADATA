@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: ollama
+Version: 0.1.0
+Summary: The official Python client for Ollama.
+Home-page: https://ollama.ai
+License: MIT
+Author: Ollama
+Author-email: hello@ollama.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.25.2,<0.26.0)
+Project-URL: Repository, https://github.com/jmorganca/ollama-python
+Description-Content-Type: text/markdown
+
+# Ollama Python Library
+
+The Ollama Python library provides the easiest way to integrate your Python 3 project with [Ollama](https://github.com/jmorganca/ollama).
+
+## Getting Started
+
+Requires Python 3.8 or higher.
+
+```sh
+pip install ollama
+```
+
+A global default client is provided for convenience and can be used in the same way as the synchronous client.
+
+```python
+import ollama
+response = ollama.chat(model='llama2', messages=[{'role': 'user', 'content': 'Why is the sky blue?'}])
+```
+
+```python
+import ollama
+message = {'role': 'user', 'content': 'Why is the sky blue?'}
+for part in ollama.chat(model='llama2', messages=[message], stream=True):
+  print(part['message']['content'], end='', flush=True)
+```
+
+
+## Using the Synchronous Client
+
+```python
+from ollama import Client
+message = {'role': 'user', 'content': 'Why is the sky blue?'}
+response = Client().chat(model='llama2', messages=[message])
+```
+
+Response streaming can be enabled by setting `stream=True`. This modifies the function to return a Python generator where each part is an object in the stream.
+
+```python
+from ollama import Client
+message = {'role': 'user', 'content': 'Why is the sky blue?'}
+for part in Client().chat(model='llama2', messages=[message], stream=True):
+  print(part['message']['content'], end='', flush=True)
+```
+
+## Using the Asynchronous Client
+
+```python
+import asyncio
+from ollama import AsyncClient
+
+async def chat():
+  message = {'role': 'user', 'content': 'Why is the sky blue?'}
+  response = await AsyncClient().chat(model='llama2', messages=[message])
+
+asyncio.run(chat())
+```
+
+Similar to the synchronous client, setting `stream=True` modifies the function to return a Python asynchronous generator.
+
+```python
+import asyncio
+from ollama import AsyncClient
+
+async def chat():
+  message = {'role': 'user', 'content': 'Why is the sky blue?'}
+  async for part in await AsyncClient().chat(model='llama2', messages=[message], stream=True):
+    print(part['message']['content'], end='', flush=True)
+
+asyncio.run(chat())
+```
+
+## Handling Errors
+
+Errors are raised if requests return an error status or if an error is detected while streaming.
+
+```python
+model = 'does-not-yet-exist'
+
+try:
+  ollama.chat(model)
+except ollama.ResponseError as e:
+  print('Error:', e.content)
+  if e.status_code == 404:
+    ollama.pull(model)
+```
+

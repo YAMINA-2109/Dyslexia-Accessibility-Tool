@@ -4,8 +4,24 @@ import pyttsx3
 import ollama
 import random
 import time
+from g2p_en import G2p
+import tempfile
+import os
 import comtypes.client  # For COM initialization
 from gtts import gTTS  # Alternative TTS library
+import nltk
+import logging
+logging.basicConfig(
+    filename='app.log',
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# Ensure NLTK data is downloaded
+try:
+    nltk.data.find('taggers/averaged_perceptron_tagger_eng')
+except LookupError:
+    nltk.download('averaged_perceptron_tagger_eng')
 
 # Set Tesseract Path (Windows)
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -180,3 +196,121 @@ def provide_encouragement():
         "You've got this!",
     ]
     return random.choice(encouragements)
+
+# Pronunciation and Meaning Functions
+def detect_complex_words(text):
+    """Identify complex words using dyslexia-focused criteria"""
+    try:
+        # Preserve original words and order
+        original_words = text.split()
+        base_words_lower = {word.lower() for word in original_words}
+        
+        # Dyslexia-focused prompt
+        prompt = f"""ANALYZE THIS TEXT THROUGH A DYSLEXIC READER'S PERSPECTIVE:
+        {text}
+        
+        IDENTIFY WORDS THAT:
+        1. List EXACT words as they appear
+        2. Have uncommon letter patterns (e.g., 'ough' in 'through')
+        3. Contain silent letters
+        4. Technical/scientific terms
+        5. Comma-separated
+        6. Have 3+ syllables
+        7. Are homophones (words that sound alike)
+        8. Maintain original order
+        9. Have irregular spellings
+        
+        RETURN COMMA-SEPARATED WORDS IN ORIGINAL ORDER"""
+        
+        response = ollama.generate(
+            model="granite3.1-dense:2b",
+            prompt=prompt
+        )
+        
+        # Combine model detection with syllable count
+        detected_words = []
+        seen = set()
+        
+        # First pass: Model's suggestions
+        for word in response['response'].split(', '):
+            clean_word = word.strip()
+            lower_word = clean_word.lower()
+            if (clean_word and
+                lower_word in base_words_lower and
+                lower_word not in seen):
+                detected_words.append(clean_word)
+                seen.add(lower_word)
+        
+        # Second pass: Programmatic checks
+        for word in original_words:
+            lower_word = word.lower()
+            if (lower_word not in seen and
+                (count_syllables(word) >= 3 or  # Custom syllable counter
+                 has_silent_letters(word) or    # Add helper functions
+                 is_irregular_spelling(word))):
+                detected_words.append(word)
+                seen.add(lower_word)
+        
+        return detected_words
+
+    except Exception as e:
+        logging.error(f"Detection error: {str(e)}")
+        return []
+    
+def count_syllables(word):
+    """Simple syllable counter for English words"""
+    word = word.lower()
+    count = 0
+    vowels = "aeiouy"
+    if word[0] in vowels:
+        count += 1
+    for index in range(1, len(word)):
+        if word[index] in vowels and word[index-1] not in vowels:
+            count += 1
+    return max(1, count)  # All words have at least 1 syllable
+
+def has_silent_letters(word):
+    """Check common silent letter patterns"""
+    silent_patterns = {
+        'kn', 'gn', 'wr', 'mb', 'mn',
+        'gh', 'rh', 'wh', 'lk', 'alf'
+    }
+    return any(pattern in word.lower() for pattern in silent_patterns)
+
+def is_irregular_spelling(word):
+    """Check for common irregular spelling patterns"""
+    irregulars = {
+        'ough', 'ei', 'ie', 'tion', 'sion',
+        'cian', 'tch', 'dge', 'gue', 'que'
+    }
+    return any(pattern in word.lower() for pattern in irregulars)
+
+def explain_word(word):
+    """Get simple explanation using Granite"""
+    try:
+        response = ollama.generate(
+            model="granite3.1-dense:2b",
+            prompt=f"Explain '{word}' simply for a dyslexic reader. Use 1 short sentence."
+        )
+        return response['response']
+    except Exception as e:
+        return f"Error explaining word: {e}"
+
+def get_phonetic(word):
+    """Get phonetic pronunciation using g2p-en"""
+    try:
+        g2p = G2p()
+        phonemes = g2p(word)
+        return ' '.join(phonemes)
+    except Exception as e:
+        return f"Error generating phonetic: {e}"
+
+def generate_word_audio(word):
+    """Create pronunciation audio with timestamp"""
+    try:
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as tf:
+            tts = gTTS(text=word, lang='en', slow=True)
+            tts.save(tf.name)
+            return tf.name
+    except Exception as e:
+        return f"Error generating audio: {e}"
