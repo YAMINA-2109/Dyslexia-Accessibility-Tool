@@ -944,3 +944,393 @@
 2025-02-23 03:29:51,652 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmp5qgx06ra.mp3'>
 2025-02-23 03:29:51,652 - DEBUG - part-0 created
 2025-02-23 03:29:51,654 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmp5qgx06ra.mp3
+2025-02-23 03:32:50,427 - DEBUG - close.started
+2025-02-23 03:32:50,429 - DEBUG - close.complete
+2025-02-23 03:32:50,429 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 03:32:50,434 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD63C09B0>
+2025-02-23 03:32:50,435 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 03:32:50,436 - DEBUG - send_request_headers.complete
+2025-02-23 03:32:50,436 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 03:32:50,436 - DEBUG - send_request_body.complete
+2025-02-23 03:32:50,436 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 03:33:33,019 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 22:33:33 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 03:33:33,035 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 03:33:33,036 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 03:33:33,037 - DEBUG - receive_response_body.complete
+2025-02-23 03:33:33,038 - DEBUG - response_closed.started
+2025-02-23 03:33:33,038 - DEBUG - response_closed.complete
+2025-02-23 04:12:44,879 - DEBUG - close.started
+2025-02-23 04:12:44,883 - DEBUG - close.complete
+2025-02-23 04:12:44,884 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:12:44,888 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD63C0CB0>
+2025-02-23 04:12:44,889 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:12:44,890 - DEBUG - send_request_headers.complete
+2025-02-23 04:12:44,891 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:12:44,891 - DEBUG - send_request_body.complete
+2025-02-23 04:12:44,891 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:13:53,122 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 23:13:53 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 04:13:53,135 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 04:13:53,136 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 04:13:53,137 - DEBUG - receive_response_body.complete
+2025-02-23 04:13:53,140 - DEBUG - response_closed.started
+2025-02-23 04:13:53,141 - DEBUG - response_closed.complete
+2025-02-23 04:13:53,181 - DEBUG - CoInitializeEx(None, 2)
+2025-02-23 04:13:53,628 - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2025-02-23 04:13:53,629 - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2025-02-23 04:13:53,762 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x1adb63b67c0 at 1add6c78950>)
+2025-02-23 04:13:53,772 - DEBUG - Does implement IProvideClassInfo
+2025-02-23 04:13:53,830 - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2025-02-23 04:13:53,830 - DEBUG - Release <POINTER(IUnknown) ptr=0x1adb63b6800 at 1add6c78dd0>
+2025-02-23 04:13:53,831 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-02-23 04:13:53,832 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2025-02-23 04:13:53,832 - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x1adb63b6800 at 1add6c78d50>
+2025-02-23 04:13:53,833 - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x1adb63b6820 at 1add6c789d0>
+2025-02-23 04:13:53,833 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1add42f3ba8 at 1add6c78a50>
+2025-02-23 04:13:53,834 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1add42f3c00 at 1add6c78bd0>
+2025-02-23 04:13:53,835 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1add37f8c80 at 1add6c78dd0>
+2025-02-23 04:13:53,835 - DEBUG - Release <POINTER(IUnknown) ptr=0x1adb63b67c0 at 1add6c78950>
+2025-02-23 04:13:53,844 - DEBUG - <POINTER(ISpeechVoice) ptr=0x1adb63b6800 at 1add6c78d50> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-02-23 04:13:53,844 - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x1adb63b6820 at 1add6c78950>
+2025-02-23 04:13:53,851 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.VoiceChange not implemented
+2025-02-23 04:13:53,851 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.Bookmark not implemented
+2025-02-23 04:13:53,851 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.Word not implemented
+2025-02-23 04:13:53,851 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.Sentence not implemented
+2025-02-23 04:13:53,852 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.Phoneme not implemented
+2025-02-23 04:13:53,852 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.Viseme not implemented
+2025-02-23 04:13:53,852 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.AudioLevel not implemented
+2025-02-23 04:13:53,852 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2025-02-23 04:13:53,853 - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2025-02-23 04:13:53,854 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2025-02-23 04:13:53,854 - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>
+2025-02-23 04:13:53,854 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>.AddRef() -> 1
+2025-02-23 04:13:53,884 - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x1adb63b6828 at 1add6c79b50>
+2025-02-23 04:13:54,292 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x1adb8ebb690 at 1add6c79b50>)
+2025-02-23 04:13:54,293 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x1adb8ebb690 at 1add6c79b50>
+2025-02-23 04:13:54,295 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x1add9239630 at 1add4e29450>)
+2025-02-23 04:13:54,295 - DEBUG - Release <POINTER(IUnknown) ptr=0x1addb93a7a0 at 1add6c79cd0>
+2025-02-23 04:13:54,296 - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x1addb933530 at 1add6c79e50>)
+2025-02-23 04:13:54,296 - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x1addb933530 at 1add6c79e50>)
+2025-02-23 04:13:54,297 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-02-23 04:13:54,298 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-02-23 04:13:54,301 - DEBUG - Release <POINTER(IUnknown) ptr=0x1add42f3cb0 at 1add6c7a050>
+2025-02-23 04:13:54,302 - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2025-02-23 04:13:54,302 - DEBUG - Release <POINTER(IUnknown) ptr=0x1addb933530 at 1add6c7a150>
+2025-02-23 04:13:54,302 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-02-23 04:13:54,303 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2025-02-23 04:13:54,303 - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x1addb933530 at 1add6c7a050>
+2025-02-23 04:13:54,303 - DEBUG - Release <POINTER(IDispatch) ptr=0x1addb933530 at 1add6c79fd0>
+2025-02-23 04:13:54,303 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1add42f3cb0 at 1add6c7a0d0>
+2025-02-23 04:13:54,303 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1add37f8c80 at 1add6c7a150>
+2025-02-23 04:13:54,303 - DEBUG - Release <POINTER(IDispatch) ptr=0x1addb933530 at 1add6c79e50>
+2025-02-23 04:13:54,303 - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x1addb93a7a0 at 1add6c79b50>
+2025-02-23 04:13:54,305 - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x1add9239630 at 1add4e29450>
+2025-02-23 04:13:54,306 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x1addb933530 at 1add6c7a050>
+2025-02-23 04:13:54,307 - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x1adb8ebb690 at 1add4e29450>)
+2025-02-23 04:13:54,307 - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x1adb8ebb690 at 1add4e29450>
+2025-02-23 04:13:54,311 - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2025-02-23 04:13:54,311 - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2025-02-23 04:13:54,315 - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x1add93748e0 at 1add6c7a050>)
+2025-02-23 04:13:54,316 - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2025-02-23 04:13:54,316 - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2025-02-23 04:13:54,317 - DEBUG - Release <POINTER(IUnknown) ptr=0x1add42f3d60 at 1add6c79e50>
+2025-02-23 04:13:54,317 - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2025-02-23 04:13:54,317 - DEBUG - Release <POINTER(IUnknown) ptr=0x1add93748e0 at 1add6c79f50>
+2025-02-23 04:13:54,317 - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2025-02-23 04:13:54,318 - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2025-02-23 04:13:54,318 - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x1add93748e0 at 1add6c79e50>
+2025-02-23 04:13:54,318 - DEBUG - Release <POINTER(IDispatch) ptr=0x1add93748e0 at 1add6c79dd0>
+2025-02-23 04:13:54,318 - DEBUG - Release <POINTER(ITypeInfo) ptr=0x1add42f3d60 at 1add6c7a150>
+2025-02-23 04:13:54,318 - DEBUG - Release <POINTER(ITypeLib) ptr=0x1add37f8c80 at 1add6c79f50>
+2025-02-23 04:13:54,319 - DEBUG - Release <POINTER(IUnknown) ptr=0x1add93748e0 at 1add6c7a050>
+2025-02-23 04:13:54,502 - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x1add9375d08 at 1add81b1250>)
+2025-02-23 04:13:55,397 - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x1add93748e0 at 1add6c79e50>
+2025-02-23 04:13:55,398 - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x1add9375d08 at 1add81b1250>
+2025-02-23 04:13:55,449 - DEBUG - CoUninitialize()
+2025-02-23 04:13:55,449 - DEBUG - Release <POINTER(ISpeechVoice) ptr=0x1adb63b6800 at 1add6c78d50>
+2025-02-23 04:13:55,450 - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>.Release() -> 0
+2025-02-23 04:13:55,450 - DEBUG - 0 active COM objects: Removed <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x000001ADD63C3EC0>
+2025-02-23 04:13:55,450 - DEBUG - Remaining: []
+2025-02-23 04:13:55,454 - DEBUG - Release <POINTER(IConnectionPoint) ptr=0x1adb63b6808 at 1add6c79bd0>
+2025-02-23 04:19:05,641 - DEBUG - close.started
+2025-02-23 04:19:05,645 - DEBUG - close.complete
+2025-02-23 04:19:05,645 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:19:05,649 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD63C23F0>
+2025-02-23 04:19:05,649 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:19:05,649 - DEBUG - send_request_headers.complete
+2025-02-23 04:19:05,650 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:19:05,650 - DEBUG - send_request_body.complete
+2025-02-23 04:19:05,650 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:20:33,297 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:20:33,347 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD63C3620>
+2025-02-23 04:20:33,349 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:20:33,377 - DEBUG - send_request_headers.complete
+2025-02-23 04:20:33,378 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:20:33,378 - DEBUG - send_request_body.complete
+2025-02-23 04:20:33,379 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:21:02,864 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:21:02,866 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD6655A90>
+2025-02-23 04:21:02,866 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:21:02,867 - DEBUG - send_request_headers.complete
+2025-02-23 04:21:02,868 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:21:02,869 - DEBUG - send_request_body.complete
+2025-02-23 04:21:02,869 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:21:17,562 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:21:17,565 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD4B7DE50>
+2025-02-23 04:21:17,565 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:21:17,566 - DEBUG - send_request_headers.complete
+2025-02-23 04:21:17,566 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:21:17,567 - DEBUG - send_request_body.complete
+2025-02-23 04:21:17,568 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:21:17,668 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 23:21:17 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 04:21:17,669 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 04:21:17,669 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 04:21:17,671 - DEBUG - receive_response_body.complete
+2025-02-23 04:21:17,671 - DEBUG - response_closed.started
+2025-02-23 04:21:17,671 - DEBUG - response_closed.complete
+2025-02-23 04:22:33,220 - DEBUG - close.started
+2025-02-23 04:22:33,220 - DEBUG - close.complete
+2025-02-23 04:22:33,221 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:22:33,222 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD9085C70>
+2025-02-23 04:22:33,223 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:22:33,223 - DEBUG - send_request_headers.complete
+2025-02-23 04:22:33,224 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:22:33,225 - DEBUG - send_request_body.complete
+2025-02-23 04:22:33,225 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:22:37,363 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:22:37,365 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD9084A70>
+2025-02-23 04:22:37,365 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:22:37,366 - DEBUG - send_request_headers.complete
+2025-02-23 04:22:37,366 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:22:37,366 - DEBUG - send_request_body.complete
+2025-02-23 04:22:37,366 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:23:02,321 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 04:23:02,324 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001ADD6657500>
+2025-02-23 04:23:02,325 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 04:23:02,325 - DEBUG - send_request_headers.complete
+2025-02-23 04:23:02,326 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 04:23:02,326 - DEBUG - send_request_body.complete
+2025-02-23 04:23:02,326 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 04:23:08,487 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 22 Feb 2025 23:23:08 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 04:23:08,488 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 04:23:08,488 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 04:23:08,489 - DEBUG - receive_response_body.complete
+2025-02-23 04:23:08,489 - DEBUG - response_closed.started
+2025-02-23 04:23:08,490 - DEBUG - response_closed.complete
+2025-02-23 16:07:59,579 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 16:07:59,634 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C7CB8980>
+2025-02-23 16:07:59,635 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 16:07:59,636 - DEBUG - send_request_headers.complete
+2025-02-23 16:07:59,637 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 16:07:59,637 - DEBUG - send_request_body.complete
+2025-02-23 16:07:59,637 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 16:09:12,038 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 11:09:12 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 16:09:12,039 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 16:09:12,039 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 16:09:12,040 - DEBUG - receive_response_body.complete
+2025-02-23 16:09:12,040 - DEBUG - response_closed.started
+2025-02-23 16:09:12,040 - DEBUG - response_closed.complete
+2025-02-23 16:15:02,435 - DEBUG - close.started
+2025-02-23 16:15:02,437 - DEBUG - close.complete
+2025-02-23 16:15:02,437 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 16:15:02,442 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C7C7E510>
+2025-02-23 16:15:02,443 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 16:15:02,444 - DEBUG - send_request_headers.complete
+2025-02-23 16:15:02,444 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 16:15:02,446 - DEBUG - send_request_body.complete
+2025-02-23 16:15:02,446 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 16:16:08,225 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 11:16:08 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 16:16:08,233 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 16:16:08,234 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 16:16:08,238 - DEBUG - receive_response_body.complete
+2025-02-23 16:16:08,240 - DEBUG - response_closed.started
+2025-02-23 16:16:08,240 - DEBUG - response_closed.complete
+2025-02-23 16:55:14,466 - DEBUG - close.started
+2025-02-23 16:55:14,470 - DEBUG - close.complete
+2025-02-23 16:55:14,470 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 16:55:14,474 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230AD2EC620>
+2025-02-23 16:55:14,475 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 16:55:14,475 - DEBUG - send_request_headers.complete
+2025-02-23 16:55:14,475 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 16:55:14,476 - DEBUG - send_request_body.complete
+2025-02-23 16:55:14,476 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 16:56:15,489 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 11:56:15 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 16:56:15,519 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 16:56:15,521 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 16:56:15,523 - DEBUG - receive_response_body.complete
+2025-02-23 16:56:15,527 - DEBUG - response_closed.started
+2025-02-23 16:56:15,528 - DEBUG - response_closed.complete
+2025-02-23 16:56:31,001 - DEBUG - close.started
+2025-02-23 16:56:31,002 - DEBUG - close.complete
+2025-02-23 16:56:31,002 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 16:56:31,006 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C7ED7410>
+2025-02-23 16:56:31,006 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 16:56:31,007 - DEBUG - send_request_headers.complete
+2025-02-23 16:56:31,007 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 16:56:31,008 - DEBUG - send_request_body.complete
+2025-02-23 16:56:31,008 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 16:56:57,356 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 11:56:57 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 16:56:57,357 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 16:56:57,357 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 16:56:57,358 - DEBUG - receive_response_body.complete
+2025-02-23 16:56:57,359 - DEBUG - response_closed.started
+2025-02-23 16:56:57,359 - DEBUG - response_closed.complete
+2025-02-23 16:57:42,840 - DEBUG - close.started
+2025-02-23 16:57:42,840 - DEBUG - close.complete
+2025-02-23 16:57:42,841 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 16:57:42,842 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C7ED7170>
+2025-02-23 16:57:42,842 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 16:57:42,843 - DEBUG - send_request_headers.complete
+2025-02-23 16:57:42,843 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 16:57:42,843 - DEBUG - send_request_body.complete
+2025-02-23 16:57:42,843 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 16:59:14,101 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 11:59:14 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 16:59:14,102 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 16:59:14,102 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 16:59:14,103 - DEBUG - receive_response_body.complete
+2025-02-23 16:59:14,103 - DEBUG - response_closed.started
+2025-02-23 16:59:14,103 - DEBUG - response_closed.complete
+2025-02-23 17:01:58,030 - DEBUG - close.started
+2025-02-23 17:01:58,031 - DEBUG - close.complete
+2025-02-23 17:01:58,032 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 17:01:58,034 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C7ED5220>
+2025-02-23 17:01:58,034 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 17:01:58,035 - DEBUG - send_request_headers.complete
+2025-02-23 17:01:58,035 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 17:01:58,036 - DEBUG - send_request_body.complete
+2025-02-23 17:01:58,037 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 17:03:02,573 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 12:03:02 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 17:03:02,574 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 17:03:02,574 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 17:03:02,575 - DEBUG - receive_response_body.complete
+2025-02-23 17:03:02,576 - DEBUG - response_closed.started
+2025-02-23 17:03:02,576 - DEBUG - response_closed.complete
+2025-02-23 17:30:29,234 - DEBUG - close.started
+2025-02-23 17:30:29,240 - DEBUG - close.complete
+2025-02-23 17:30:29,241 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 17:30:29,244 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230AD28A600>
+2025-02-23 17:30:29,245 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 17:30:29,245 - DEBUG - send_request_headers.complete
+2025-02-23 17:30:29,245 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 17:30:29,246 - DEBUG - send_request_body.complete
+2025-02-23 17:30:29,246 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 17:31:36,245 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 12:31:36 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 17:31:36,255 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 17:31:36,256 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 17:31:36,258 - DEBUG - receive_response_body.complete
+2025-02-23 17:31:36,259 - DEBUG - response_closed.started
+2025-02-23 17:31:36,259 - DEBUG - response_closed.complete
+2025-02-23 17:35:01,178 - DEBUG - close.started
+2025-02-23 17:35:01,179 - DEBUG - close.complete
+2025-02-23 17:35:01,180 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 17:35:01,184 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C7ED5700>
+2025-02-23 17:35:01,184 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 17:35:01,186 - DEBUG - send_request_headers.complete
+2025-02-23 17:35:01,186 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 17:35:01,186 - DEBUG - send_request_body.complete
+2025-02-23 17:35:01,186 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 17:36:49,334 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 12:36:49 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 17:36:49,334 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 17:36:49,334 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 17:36:49,336 - DEBUG - receive_response_body.complete
+2025-02-23 17:36:49,336 - DEBUG - response_closed.started
+2025-02-23 17:36:49,336 - DEBUG - response_closed.complete
+2025-02-23 18:01:02,725 - DEBUG - close.started
+2025-02-23 18:01:02,728 - DEBUG - close.complete
+2025-02-23 18:01:02,728 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 18:01:02,734 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C64E8470>
+2025-02-23 18:01:02,735 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 18:01:02,739 - DEBUG - send_request_headers.complete
+2025-02-23 18:01:02,739 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 18:01:02,740 - DEBUG - send_request_body.complete
+2025-02-23 18:01:02,741 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 18:02:01,498 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 13:02:01 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 18:02:01,500 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 18:02:01,501 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 18:02:01,503 - DEBUG - receive_response_body.complete
+2025-02-23 18:02:01,506 - DEBUG - response_closed.started
+2025-02-23 18:02:01,506 - DEBUG - response_closed.complete
+2025-02-23 18:02:01,528 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 18:02:01,529 - DEBUG - send_request_headers.complete
+2025-02-23 18:02:01,530 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 18:02:01,531 - DEBUG - send_request_body.complete
+2025-02-23 18:02:01,532 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 18:02:07,638 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 13:02:07 GMT'), (b'Content-Length', b'890')])
+2025-02-23 18:02:07,639 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 18:02:07,639 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 18:02:07,642 - DEBUG - receive_response_body.complete
+2025-02-23 18:02:07,642 - DEBUG - response_closed.started
+2025-02-23 18:02:07,642 - DEBUG - response_closed.complete
+2025-02-23 18:02:09,614 - DEBUG - text: Qunatum
+2025-02-23 18:02:09,614 - DEBUG - tld: com
+2025-02-23 18:02:09,615 - DEBUG - lang: en
+2025-02-23 18:02:09,615 - DEBUG - slow: True
+2025-02-23 18:02:09,615 - DEBUG - lang_check: True
+2025-02-23 18:02:09,615 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x00000230C7C96B60>, <function end_of_line at 0x00000230C7C96C00>, <function abbreviations at 0x00000230C7C96CA0>, <function word_sub at 0x00000230C7C97560>]
+2025-02-23 18:02:09,615 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|¡|\\[|\\(|—|\u3002|\u3001|\\)|\uff1a|\\]|\\\n|\u060c|¿|;|\uff0c|\u2025', re.IGNORECASE) from: [<function tone_marks at 0x00000230C7C97600>, <function period_comma at 0x00000230C7C976A0>, <function colon at 0x00000230C7C97740>, <function other_punctuation at 0x00000230C7C977E0>]>
+2025-02-23 18:02:09,619 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 18:02:09,620 - DEBUG - pre-processing: <function tone_marks at 0x00000230C7C96B60>
+2025-02-23 18:02:09,621 - DEBUG - pre-processing: <function end_of_line at 0x00000230C7C96C00>
+2025-02-23 18:02:09,621 - DEBUG - pre-processing: <function abbreviations at 0x00000230C7C96CA0>
+2025-02-23 18:02:09,622 - DEBUG - pre-processing: <function word_sub at 0x00000230C7C97560>
+2025-02-23 18:02:09,623 - DEBUG - text_parts: ['Qunatum']
+2025-02-23 18:02:09,623 - DEBUG - text_parts: 1
+2025-02-23 18:02:09,625 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Qunatum%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 18:02:09,628 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 18:02:10,707 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 18:02:10,745 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '137'}
+2025-02-23 18:02:10,746 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 18:02:10,746 - DEBUG - status-0: 200
+2025-02-23 18:02:10,753 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmprmn3vgo3.mp3'>
+2025-02-23 18:02:10,753 - DEBUG - part-0 created
+2025-02-23 18:02:10,755 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmprmn3vgo3.mp3
+2025-02-23 18:02:10,766 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 18:02:10,767 - DEBUG - send_request_headers.complete
+2025-02-23 18:02:10,767 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 18:02:10,767 - DEBUG - send_request_body.complete
+2025-02-23 18:02:10,767 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 18:02:19,450 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 13:02:19 GMT'), (b'Content-Length', b'1011')])
+2025-02-23 18:02:19,451 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 18:02:19,451 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 18:02:19,451 - DEBUG - receive_response_body.complete
+2025-02-23 18:02:19,451 - DEBUG - response_closed.started
+2025-02-23 18:02:19,451 - DEBUG - response_closed.complete
+2025-02-23 18:02:20,832 - DEBUG - text: Dyslexia
+2025-02-23 18:02:20,832 - DEBUG - tld: com
+2025-02-23 18:02:20,832 - DEBUG - lang: en
+2025-02-23 18:02:20,834 - DEBUG - slow: True
+2025-02-23 18:02:20,834 - DEBUG - lang_check: True
+2025-02-23 18:02:20,834 - DEBUG - pre_processor_funcs: [<function tone_marks at 0x00000230C7C96B60>, <function end_of_line at 0x00000230C7C96C00>, <function abbreviations at 0x00000230C7C96CA0>, <function word_sub at 0x00000230C7C97560>]
+2025-02-23 18:02:20,884 - DEBUG - tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=\uff1f).|(?<=\uff01).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|¡|\\[|\\(|—|\u3002|\u3001|\\)|\uff1a|\\]|\\\n|\u060c|¿|;|\uff0c|\u2025', re.IGNORECASE) from: [<function tone_marks at 0x00000230C7C97600>, <function period_comma at 0x00000230C7C976A0>, <function colon at 0x00000230C7C97740>, <function other_punctuation at 0x00000230C7C977E0>]>
+2025-02-23 18:02:20,886 - DEBUG - langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+2025-02-23 18:02:20,889 - DEBUG - pre-processing: <function tone_marks at 0x00000230C7C96B60>
+2025-02-23 18:02:20,890 - DEBUG - pre-processing: <function end_of_line at 0x00000230C7C96C00>
+2025-02-23 18:02:20,890 - DEBUG - pre-processing: <function abbreviations at 0x00000230C7C96CA0>
+2025-02-23 18:02:20,890 - DEBUG - pre-processing: <function word_sub at 0x00000230C7C97560>
+2025-02-23 18:02:20,890 - DEBUG - text_parts: ['Dyslexia']
+2025-02-23 18:02:20,890 - DEBUG - text_parts: 1
+2025-02-23 18:02:20,891 - DEBUG - data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22Dyslexia%5C%22%2C%5C%22en%5C%22%2Ctrue%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+2025-02-23 18:02:20,892 - DEBUG - Starting new HTTPS connection (1): translate.google.com:443
+2025-02-23 18:02:21,762 - DEBUG - https://translate.google.com:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/1.1" 200 None
+2025-02-23 18:02:21,783 - DEBUG - headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '138'}
+2025-02-23 18:02:21,784 - DEBUG - url-0: https://translate.google.com/_/TranslateWebserverUi/data/batchexecute
+2025-02-23 18:02:21,784 - DEBUG - status-0: 200
+2025-02-23 18:02:21,785 - DEBUG - part-0 written to <_io.BufferedWriter name='C:\\Users\\PMLS\\AppData\\Local\\Temp\\tmpfx5pe6j5.mp3'>
+2025-02-23 18:02:21,786 - DEBUG - part-0 created
+2025-02-23 18:02:21,787 - DEBUG - Saved to C:\Users\PMLS\AppData\Local\Temp\tmpfx5pe6j5.mp3
+2025-02-23 18:02:34,568 - DEBUG - close.started
+2025-02-23 18:02:34,570 - DEBUG - close.complete
+2025-02-23 18:02:34,570 - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2025-02-23 18:02:34,570 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000230C826D100>
+2025-02-23 18:02:34,571 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-02-23 18:02:34,572 - DEBUG - send_request_headers.complete
+2025-02-23 18:02:34,572 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-02-23 18:02:34,573 - DEBUG - send_request_body.complete
+2025-02-23 18:02:34,574 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-02-23 18:03:30,644 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sun, 23 Feb 2025 13:03:30 GMT'), (b'Transfer-Encoding', b'chunked')])
+2025-02-23 18:03:30,645 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-02-23 18:03:30,646 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-02-23 18:03:30,646 - DEBUG - receive_response_body.complete
+2025-02-23 18:03:30,646 - DEBUG - response_closed.started
+2025-02-23 18:03:30,646 - DEBUG - response_closed.complete
+2025-02-23 18:11:38,855 - DEBUG - Calling CoUninitialize()
+2025-02-23 18:11:38,857 - DEBUG - CoUninitialize() done.

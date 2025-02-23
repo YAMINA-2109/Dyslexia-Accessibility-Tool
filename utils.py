@@ -7,9 +7,11 @@ import time
 from g2p_en import G2p
 import tempfile
 import os
+from fpdf import FPDF
 import comtypes.client  # For COM initialization
 from gtts import gTTS  # Alternative TTS library
 import nltk
+import re
 import logging
 logging.basicConfig(
     filename='app.log',
@@ -43,25 +45,54 @@ COMPLEX_SENTENCES = [
     "Artificial intelligence is transforming industries.",
 ]
 
+
+MAX_TEXT_LENGTH = 5000  # Characters
+
+def validate_word(word):
+    """Sanitize word input for processing"""
+    return ''.join([c for c in word if c.isalpha() or c in ("-", "'")]).strip()
+
+def truncate_text(text):
+    """Ensure text processing stays within limits"""
+    return text[:MAX_TEXT_LENGTH] + " [...]" if len(text) > MAX_TEXT_LENGTH else text
+
+def complex_word_highlighter(text, complex_words):
+    """Highlight detected complex words in text"""
+    for word in sorted(complex_words, key=len, reverse=True):
+        text = text.replace(word, f"**{word}**")
+    return text
+
+def clean_text_for_tts(text):
+    """
+    Remove markdown formatting characters that might be read aloud.
+    For instance, remove asterisks (*) and underscores (_).
+    """
+    # Remove asterisks and underscores
+    cleaned_text = re.sub(r'[*_]', '', text)
+    return cleaned_text
+
+
 # Real-Time Text Assistance
 def text_to_speech(text, output_file="output.mp3", rate=130, volume=1.0):
     """
-    Convert text to speech using pyttsx3 with adjustable speed & volume.
+    Convert text to speech using pyttsx3 after cleaning markdown formatting.
     """
-    # Initialize COM
+    # Clean the text to remove formatting symbols
+    clean_text = clean_text_for_tts(text)
+    
+    # Initialize COM for Windows
     comtypes.CoInitialize()
     
     try:
         engine = pyttsx3.init()
         engine.setProperty('rate', rate)
         engine.setProperty('volume', volume)
-        engine.save_to_file(text, output_file)
+        engine.save_to_file(clean_text, output_file)
         engine.runAndWait()
         return output_file
     except Exception as e:
         return f"Error in text-to-speech: {e}"
     finally:
-        # Uninitialize COM
         comtypes.CoUninitialize()
 
 def speech_to_text(audio_file):
@@ -157,15 +188,57 @@ def phonetic_pronunciation(word):
 
 # Personalization and Adaptive Learning
 def generate_personalized_content(reading_level, interests):
-    """
-    Generate personalized content based on reading level and interests.
-    """
-    if reading_level == "beginner":
-        return random.choice(SIMPLE_SENTENCES)
-    elif reading_level == "intermediate":
-        return random.choice(COMPLEX_SENTENCES)
-    else:
-        return "Personalized content not available for this level."
+    """Optimized content generation with dyslexia-focused formatting"""
+    try:
+        # Validate and clean inputs
+        interests = interests.strip()[:50]  # Shorter limit for faster processing
+        if not interests:
+            return "Error: Please enter valid interests"
+
+        # Level-specific templates for faster generation
+        prompt_templates = {
+            "beginner": """Create beginner-friendly content about {topic} with:
+            - Short sentences (max 8 words)
+            - Bullet points with emojis
+            - Bold key terms
+            - 3-5 main facts
+            - No complex punctuation""",
+
+            "intermediate": """Explain {topic} for intermediate learners:
+            - Use 2-3 sentence paragraphs
+            - Highlight technical terms
+            - Include real-world examples
+            - Add section headers""",
+
+            "advanced": """Create advanced content about {topic}:
+            - Detailed explanations
+            - Technical terms with simple definitions
+            - Comparative analysis
+            - Future implications"""
+        }
+
+        prompt = f"""{prompt_templates[reading_level]}
+        
+        Formatting rules:
+        - NO markdown headers (# symbols)
+        - NO final notes or comments
+        - Use → instead of bullet points
+        - Include relevant emojis
+        - BOLD important terms
+        
+        Topic: {interests}"""
+
+        response = ollama.generate(
+            model="granite3.1-dense:2b",
+            prompt=prompt,
+            options={'temperature': 0.5, 'max_tokens': 500}  # Faster generation
+        )
+        
+        return response['response'].replace("#", "")  # Remove any markdown headers
+
+    except Exception as e:
+        logging.error(f"Personalization error: {str(e)}")
+        return f"Error generating content: {str(e)}"
 
 # Gamification and Interactive Learning
 def generate_quiz(text):
@@ -314,3 +387,17 @@ def generate_word_audio(word):
             return tf.name
     except Exception as e:
         return f"Error generating audio: {e}"
+    
+def save_text_as_pdf(text, filename="output.pdf"):
+    try:
+        pdf = FPDF()
+        pdf.add_page()
+        # Add a Unicode font (ensure the TTF file is in your project directory)
+        pdf.add_font("DejaVu", "", "DejaVuSans.ttf", uni=True)
+        pdf.set_font("DejaVu", size=12)
+        for line in text.split('\n'):
+            pdf.cell(0, 10, txt=line, ln=True)
+        pdf.output(filename)
+        return filename
+    except Exception as e:
+        return f"Error in PDF generation: {e}"

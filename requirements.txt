@@ -11,3 +11,4 @@ python-levenshtein>=0.25.0  # Required for g2p-en alignment
 # Optional (if needed)
 numpy>=1.26.0  # Dependency for g2p-en
 nltk>=3.8.1
+fpdf==1.7.2

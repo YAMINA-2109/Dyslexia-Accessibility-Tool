@@ -6,7 +6,8 @@ from utils import (
     phonetic_pronunciation, generate_personalized_content, generate_quiz,
     provide_encouragement, 
     detect_complex_words, explain_word,
-    get_phonetic, generate_word_audio
+    get_phonetic, generate_word_audio,
+    save_text_as_pdf 
 )
 
 # Main Page
@@ -185,17 +186,87 @@ elif page == "🔠 Pronunciation Support":
 # Personalized Learning Page
 elif page == "🎓 Personalized Learning":
     st.header("🎓 Personalized Learning")
-    reading_level = st.selectbox("Select your reading level:", ["beginner", "intermediate", "advanced"])
-    interests = st.text_input("Enter your interests (e.g., science, history, animals):")
-    if st.button("Generate Personalized Content"):
-        if not interests.strip():
-            st.warning("Please enter your interests to generate content.")
-        else:
-            content = generate_personalized_content(reading_level, interests)
-            if content.startswith("Error"):
-                st.error(content)
+    
+    # Split into two columns for better layout
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        reading_level = st.selectbox(
+            "Select your reading level:",
+            ["beginner", "intermediate", "advanced"],
+            index=0
+        )
+    with col2:
+        interests = st.text_input(
+            "Enter your interests (e.g., space, animals, art):",
+            placeholder="What would you like to learn about?",
+            max_chars=50
+        )
+
+    # Generate content and store it in session state
+    if st.button("✨ Generate Learning Material", key="generate_btn"):
+        try:
+            if not interests.strip():
+                st.warning("Please share your interests to create content")
             else:
-                st.write(f"Personalized Content: {content}")
+                with st.spinner(f"🧠 Creating {reading_level}-level content about {interests}..."):
+                    try:
+                        content = generate_personalized_content(reading_level, interests)
+                        if content.startswith("Error"):
+                            st.error(content)
+                        else:
+                            # Clean up the output
+                            cleaned_content = content.split("[Note for Dyslexia-Friendly]")[0]
+                            cleaned_content = cleaned_content.replace("#", "##")  # Reduce header size
+                            st.session_state.generated_content = cleaned_content
+                            st.success("Content generated successfully!")
+                    except Exception as e:
+                        st.error(f"Content generation failed: {e}")
+        except Exception as e:
+            st.error(f"Unexpected error: {e}")
+
+    # If content is generated, display it along with the action buttons
+    if "generated_content" in st.session_state:
+        with st.expander(f"📚 Learn about {interests.capitalize()}", expanded=True):
+            st.markdown(f"""
+            <div style="line-height:1.8; font-size:18px;">
+            {st.session_state.generated_content}
+            </div>
+            """, unsafe_allow_html=True)
+        
+        # Quick action buttons for Audio and PDF generation
+        col_a, col_b = st.columns(2)
+        
+        with col_a:
+            try:
+                if st.button("🎧 Generate Audio Version", key="audio_btn"):
+                    try:
+                        audio_file = text_to_speech(st.session_state.generated_content)
+                        if audio_file.startswith("Error"):
+                            st.error(audio_file)
+                        else:
+                            st.audio(audio_file, format="audio/mp3")
+                    except Exception as e:
+                        st.error(f"Audio generation failed: {e}")
+            except Exception as e:
+                st.error(f"Unexpected error with audio button: {e}")
+        
+        with col_b:
+            try:
+                if st.button("📥 Save as PDF", key="pdf_btn"):
+                    try:
+                        pdf_file = save_text_as_pdf(st.session_state.generated_content)
+                        if isinstance(pdf_file, str) and pdf_file.startswith("Error"):
+                            st.error(pdf_file)
+                        else:
+                            with open(pdf_file, "rb") as f:
+                                pdf_data = f.read()
+                            st.download_button("Download PDF", data=pdf_data, file_name="output.pdf", mime="application/pdf")
+                            # Optionally remove the PDF file after download
+                            os.remove(pdf_file)
+                    except Exception as e:
+                        st.error(f"PDF generation failed: {e}")
+            except Exception as e:
+                st.error(f"Unexpected error with PDF button: {e}")
 
 # Interactive Tools Page
 elif page == "🎮 Interactive Tools":
